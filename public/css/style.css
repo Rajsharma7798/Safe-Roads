@@ -1,0 +1,150 @@
+/* 
+ * SafeRoads Initiative Custom Styles
+ * Theme: Modern Civic-Tech, Light Mode
+ */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f6;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+/* Abstract City Grid Background for Body */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/images/bg.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Typography & Colors */
+.text-primary {
+    color: #0056b3 !important;
+}
+
+.bg-primary {
+    background-color: #0056b3 !important;
+}
+
+/* Hero Hub & Map Section */
+.hero-hub {
+    position: relative;
+    height: 70vh;
+    min-height: 500px;
+    background-color: #e9ecef;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.floating-header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 25px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+}
+
+.map-controls {
+    position: absolute;
+    z-index: 1000;
+}
+
+.top-controls {
+    top: 80px;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-width: 450px;
+}
+
+.search-container {
+    flex-grow: 1;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.search-container input {
+    border: none;
+    box-shadow: none !important;
+    padding: 12px 15px;
+}
+
+.search-container .input-group-text {
+    border: none;
+    background: transparent;
+}
+
+#btn-random-hazard {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-controls {
+    bottom: 20px;
+}
+
+/* Floating Action Buttons */
+.fab {
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fab:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Social Proof Banner */
+.social-proof-banner {
+    background: linear-gradient(135deg, #1e293b, #0f172a) !important;
+    border-top: 4px solid #0056b3;
+}
+
+/* Cards */
+.social-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card {
+    background: linear-gradient(135deg, #0056b3, #004494) !important;
+}
+
+.feedback-card {
+    border-radius: 15px;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
